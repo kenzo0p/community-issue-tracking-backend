@@ -17,6 +17,10 @@ const userSchema = new mongoose.Schema(
       trim: true,
       minlength: [3, "lastname should atleast 3 characters"],
     },
+    avatar :{
+      type : String,
+      default :"default-avatar.png"
+    },
     email: {
       type: String,
       required: true,
